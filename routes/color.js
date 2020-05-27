@@ -11,7 +11,7 @@ var urlencodedParser = bodyParser.urlencoded({ extended: false })
 router.use(function timeLog (req, res, next) {
     console.log('Time: ', Date());
     res.set('Cache-Control', 'no-store, no-cache, must-revalidate, private');
-    next(); docker / rfontain / pacman
+    next();
 })
 
 router.get('/colors',urlencodedParser,function(req,res,next) {
